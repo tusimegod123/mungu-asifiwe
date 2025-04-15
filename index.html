@@ -28,419 +28,7 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <style>
-                                  body {
-                                    margin: 0;
-                                    font-family: "Roboto", sans-serif;
-                                    background-color: #e9f4e9;
-                                    color: #204c3b"
-                                  }
-
-                                  h1,
-                                  h2,
-                                  h3 {
-                                    font-family: "Playfair Display", serif;
-                                    color: #116e36; /* Slightly darker and less saturated */
-                                  }
-
-                                  .navbar {
-                                    background-color: #bee5d0;;
-                                  }
-
-                                  .navbar .navbar-brand,
-                                  .navbar .nav-link {
-                                    color: #116e36;
-                                  }
-
-                                  .hero {
-                                    background: url("cover.jpg") center/cover no-repeat;
-                                    height: 85vh;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    text-align: center;
-                                  }
-
-                                  .hero-content {
-                                    background-color: rgba(0, 0, 0, 0.5);
-                                    padding: 3rem;
-                                    border-radius: 10px;
-                                    color: rgb(234, 232, 227);
-                                  }
-                                  .hero-content h1 {
-                                    color: rgb(234, 232, 227);
-                                  }
-
-                                  .cta-button {
-                                    margin-top: 1rem;
-                                    padding: 0.75rem 1.5rem;
-                                    background-color: #116e36;
-                                    color: white; /* Slightly darker and less saturated */
-
-                                    border: none;
-                                    border-radius: 5px;
-                                    text-decoration: none;
-                                    font-weight: bold;
-                                    transition: background 0.3s;
-                                  }
-
-                                  .cta-button:hover {
-                                    background-color: white;
-                                    color: #1b4332;
-                                  }
-
-                                  .section {
-                                    padding: 4rem 2rem;
-                                  }
-
-                                  .badges {
-                                    display: flex;
-                                    justify-content: center;
-                                    gap: 2rem;
-                                    margin-top: 2rem;
-                                    flex-wrap: wrap;
-                                  }
-
-                                  .badge {
-                                    text-align: center;
-                                  }
-
-                                  .card {
-                                    background-color: #d7ebe0;
-                                    padding: 1.5rem;
-                                    border-radius: 10px;
-                                    text-align: center;
-                                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-                                    color: #116e36; /* Slightly darker and less saturated */
-                                  }
-
-                                  .footer {
-                                    background-color: #d7ebe0;
-                                    padding: 2rem 1rem;
-                                    text-align: center;
-                                    color: #116e36;
-                                  }
-
-                                  .img-fluid {
-                                    border-radius: 10px;
-                                  }
-
-                                  @media (max-width: 768px) {
-                                    .hero {
-                                      height: auto;
-                                      padding: 3rem 1rem;
-                                      background-position: center top;
-                                    }
-
-                                    .hero-content {
-                                      padding: 2rem;
-                                    }
-
-                                    .section {
-                                      padding: 2rem 1rem;
-                                    }
-
-                                    .badge svg {
-                                      width: 40px;
-                                      height: 40px;
-                                    }
-
-                                    .badge p {
-                                      font-size: 1rem !important;
-                                    }
-
-                                    .img-fluid {
-                                      margin-top: 2rem;
-                                    }
-
-                                    #about .row {
-                                      flex-direction: column;
-                                    }
-
-                                    #about .col-md-6 {
-                                      width: 100%;
-                                    }
-
-                                    #about img {
-                                      width: 100%;
-                                      margin-top: 1.5rem;
-                                    }
-
-                                    h1 {
-                                      font-size: 1.75rem;
-                                    }
-
-                                    h2 {
-                                      font-size: 1.5rem;
-                                    }
-
-                                    p {
-                                      font-size: 1rem;
-                                    }
-                                  }
-                                  /* Form */
-                                  form input,
-                                  form textarea {
-                                    border-radius: 0.375rem;
-                                    border: 1px solid #ccc;
-                                  }
-
-                                  form input:focus,
-                                  form textarea:focus {
-                                    border-color: #1b4d3e;
-                                    box-shadow: 0 0 0 0.2rem rgba(27, 77, 62, 0.2);
-                                  }
-
-                                  #contact .form-control:focus {
-                                    border-color: #b65b1f;
-                                    box-shadow: 0 0 0 0.2rem rgba(182, 91, 31, 0.25);
-                                  }
-
-                                  #contact .form-label {
-                                    color: #1b4d3e;
-                                  }
-                                  #contact .input-group-text {
-                                    border: 1px solid #ced4da;
-                                  }
-                                  @media (max-width: 768px) {
-                                    .offcanvas.offcanvas-end {
-                                      width: 100vw !important;
-                                      height: 100vh !important;
-                                      max-width: 100%;
-                                      border: none;
-                                    }
-                                  }
-
-                                  .form-check-input {
-                                    background-color: #ccc;
-                                    border-color: #ccc;
-                                    transition: background-color 0.3s, border-color 0.3s;
-                                  }
-
-                                  .form-check-input:hover {
-                                    box-shadow: 0 0 0 0.2rem rgba(27, 77, 62, 0.25);
-                                  }
-
-                                  .form-check-input:checked {
-                                    background-color: #b65b1f;
-                                    border-color: #b65b1f;
-                                  }
-
-                                  @media (max-width: 576px) {
-                                    .form-check.form-switch {
-                                      margin-top: 1rem;
-                                    }
-                                  }
-                                  .activity-card svg {
-                                    display: block;
-                                    margin: 0 auto 1rem auto;
-                                    width: 36px;
-                                    height: 36px;
-                                  }
-
-                                  .activity-card:hover {
-                                    transform: translateY(-5px);
-                                    background-color: #ffffff;
-                                    color: #204c3b;
-                                  }
-                                  .activity-card:hover .paragraph,
-                                  .activity-card:hover svg {
-                                    color: #204c3b;
-                                    stroke: #204c3b;
-                                  }
-
-                                  .activity-icon {
-                                    width: 40px;
-                                    height: 40px;
-                                    margin-bottom: 1rem;
-                                    color: #116e36; /* Slightly darker and less saturated */
-                                  }
-                                  .team-card {
-                                    background-color: #d7ebe0;
-                                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                                    cursor: pointer;
-                                  }
-
-                                  .team-card:hover {
-                                    transform: translateY(-6px);
-                                    box-shadow: 0 10px 20px rgba(0, 255, 170, 0.15);
-                                  }
-                                  .project-card {
-                                    background-color: #d7ebe0;
-                                    transition: transform 0.3s ease, background-color 0.3s ease;
-                                    border-radius: 10px;
-                                  }
-
-                                  .project-card:hover {
-                                    transform: translateY(-5px);
-                                    background-color: #ffffff;
-                                    color: #204c3b;
-                                  }
-                                  .project-card:hover .paragraph,
-                                  .project-card:hover svg {
-                                    color: #204c3b;
-                                    stroke: #204c3b;
-                                  }
-
-                                  .project-card svg {
-                                    width: 40px;
-                                    height: 40px;
-                                    margin-bottom: 1rem;
-                                    color: #116e36; /* Slightly darker and less saturated */
-                                  }
-
-                                  .about-cocoa-section {
-                                    background-color: #fef9f2;
-                                  }
-
-                                  .section-title {
-                                    color: #1e5a2c;
-                                    font-family: "Playfair Display", serif;
-                                    font-weight: bold;
-                                    font-size: 2rem;
-                                  }
-
-                                  .section-desc {
-                                    color: #204c3b;
-                                    font-size: 1.05rem;
-                                    line-height: 1.7;
-                                  }
-                                  .paragraph {
-                                    color: #204c3b
-                                  }
-
-                                  .paragraph:hover {
-                                    color: #fff;
-
-                                  }
-
-                                  .icon-feature {
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    gap: 0.5rem;
-                                    max-width: 100px;
-                                  }
-
-                                  .icon-text {
-                                    font-size: 0.95rem;
-                                    font-weight: 500;
-                                    color: #1e5a2c;
-                                  }
-
-
-
-                                  .stat-number {
-                                    color: #1e5a2c;
-                                    font-size: 1.8rem;
-                                    font-weight: bold;
-                                    margin-bottom: 0.2rem;
-                                  }
-
-                                  .stat-label {
-                                    color: #333;
-                                    font-size: 0.95rem;
-                                    font-weight: 500;
-                                  }
-                                  .section-title {
-                                    color: #1e5a2c;
-                                    font-family: "Playfair Display", serif;
-                                    font-weight: bold;
-                                    font-size: 2rem;
-                                  }
-
-                                  .icon-feature {
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    transition: transform 0.3s ease;
-                                  }
-
-                                  .icon-feature:hover {
-                                    transform: scale(1.05);
-                                  }
-
-                                  .icon-feature .icon {
-                                    stroke: #1e5a2c;
-                                    fill: none;
-                                    stroke-width: 2;
-                                    stroke-linecap: round;
-                                    stroke-linejoin: round;
-                                    transition: stroke 0.3s;
-                                  }
-
-                                  .icon-text {
-                                    font-size: 0.95rem;
-                                    font-weight: 500;
-                                    color: #1e5a2c;
-                                    text-align: center;
-                                    margin-top: 0.5rem;
-                                  }
-
-                                  .stat-box {
-                                    background-color: #d7ebe0;
-                                    padding: 1rem;
-                                    border-radius: 12px;
-                                    transition: transform 0.3s ease;
-                                  }
-
-                                  .stat-box:hover {
-                                    transform: translateY(-5px);
-                                  }
-
-                                  .stat-number {
-                                    color: #1e5a2c;
-                                    font-size: 1.8rem;
-                                    font-weight: bold;
-                                    margin-bottom: 0.2rem;
-                                  }
-
-                                  .stat-label {
-                                    color: #333;
-                                    font-size: 0.95rem;
-                                    font-weight: 500;
-                                  }
-
-                                  @media (max-width: 768px) {
-                                    .icon-feature {
-                                      flex: 1 0 30%;
-                                    }
-                                  }
-                                  .btn-godwin {
-                                    background-color: #116e36;
-                                    color: white;
-                                    transition: all 0.3s ease-in-out;
-                                  }
-                                  .btn-godwin:hover {
-                                    background-color: #5bb581;
-                                    color: white;
-                                  }
-                                  #contactForm{
-                                    background-color: #d7ebe0;
-                                  }
-      /* Testimonials */
-      .testimonial {
-        background: #d7ebe0;
-        border-radius: 10px;
-        padding: 2rem;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .testimonial img {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-          .map-container iframe {
-              width: 100%;
-              max-width: 100%;
-              height: 400px;
-              border: 0;
-              border-radius: 12px;
-              box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -528,7 +116,7 @@
                 <img
                   alt="Group Smiling"
                   class="img-fluid rounded-4 shadow"
-                  src="training.jpg"
+                  src="./images/training.jpg"
                 />
               </div>
             </div>
@@ -538,7 +126,7 @@
                 <img
                   alt="Cocoa Team"
                   class="img-fluid rounded-4 shadow"
-                  src="cocoa-team.jpeg"
+                  src="/images/cocoa-team.jpeg"
                 />
               </div>
               <h2 class="section-title">Cocoa</h2>
@@ -685,7 +273,7 @@
                 alt="Cleave Masereka"
                 class="rounded-circle mx-auto mb-3"
                 loading="lazy"
-                src="cleave.webp"
+                src="./images/cleave.webp"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
               <h5 class="mb-1">Cleave Masereka</h5>
@@ -700,7 +288,7 @@
                 alt="Milton Bwambale"
                 class="rounded-circle mx-auto mb-3"
                 loading="lazy"
-                src="milton.jpeg"
+                src="./images/milton.jpeg"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
               <h5 class="mb-1">Milton Bwambale</h5>
@@ -715,7 +303,7 @@
                 alt="Joshua Bwambale"
                 class="rounded-circle mx-auto mb-3"
                 loading="lazy"
-                src="joshua.jpg"
+                src="./images/joshua.jpg"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
               <h5 class="mb-1">Joshua Bwambale</h5>
@@ -730,7 +318,7 @@
                 alt="Lazarous Bwambale"
                 class="rounded-circle mx-auto mb-3"
                 loading="lazy"
-                src="lazarous.jpg"
+                src="./images/lazarous.jpg"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
               <h5 class="mb-1">Lazarous Bwambale</h5>
@@ -745,7 +333,7 @@
                 alt="Ibrahim Sseguja"
                 class="rounded-circle mx-auto mb-3"
                 loading="lazy"
-                src="ibra.jpeg"
+                src="./images/ibra.jpeg"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
               <h5 class="mb-1">Ibrahim Sseguja</h5>
@@ -760,7 +348,7 @@
                 alt="Laban Muhindo"
                 class="rounded-circle mx-auto mb-3"
                 loading="lazy"
-                src="laban.jpg"
+                src="./images/laban.jpg"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
               <h5 class="mb-1">Laban Muhindo</h5>
@@ -998,7 +586,7 @@
           <div class="carousel-inner text-center">
             <div class="carousel-item active">
               <div class="testimonial mx-auto" style="max-width: 600px">
-                <img src="sarah.png" alt="Sarah K" class="mb-3" />
+                <img src="./images/sarah.png" alt="Sarah K" class="mb-3" />
                 <p class="lead">
                   “Mungu Asifiwe Farms has changed our community. Their training
                   helped me improve my yields greatly.”
@@ -1008,7 +596,7 @@
             </div>
             <div class="carousel-item">
               <div class="testimonial mx-auto" style="max-width: 600px">
-                <img src="john.png" alt="John M" class="mb-3" />
+                <img src="./images/john.png" alt="John M" class="mb-3" />
                 <p class="lead">
                   “Truly organic, honest, and community-focused. I’m proud to
                   partner with this farm.”
@@ -1037,6 +625,150 @@
           </button>
         </div>
       </section>
+
+      <!-- Partner With Us -->
+      <section class="container py-5" id="partner" data-aos="fade-up">
+        <h2 class="text-center mb-4">Partner With Us</h2>
+        <p class="text-center" style="max-width: 700px; margin: 0 auto">
+          Whether you're a retailer, exporter, NGO, or agricultural investor, we
+          welcome collaborations that support sustainable agriculture, community
+          development, and fair trade.
+        </p>
+        <div class="text-center mt-4">
+          <a href="#contact" class="btn btn-godwin px-4 py-2"
+            >Start a Conversation</a
+          >
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="container py-5" id="gallery" data-aos="fade-up">
+        <h2 class="text-center mb-4">Gallery</h2>
+        <div class="row g-3">
+          <!-- Gallery Card -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./images/training.jpg"
+                alt="Farm Workers"
+                class="img-fluid rounded-top"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Farm Workers</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./images/team12.jpeg"
+                alt="Cocoa Harvest"
+                class="img-fluid rounded-top"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Farm Inspection</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./images/team13.jpeg"
+                alt="Community Training"
+                class="img-fluid rounded-top"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Cocoa Spraying</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./images/cocoa-team.jpeg"
+                alt="Packaging"
+                class="img-fluid rounded-top"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Cocao Cracking</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./images/airial.jpg"
+                alt="Drying Beans"
+                class="img-fluid rounded-top"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Area View</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img
+                src="./images/cover.jpg"
+                alt="Youth Project"
+                class="img-fluid rounded-top"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body">
+                <p class="card-text text-center">Cocoa Cracking</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Careers Section -->
+      <section class="container py-5" id="careers" data-aos="fade-up">
+        <h2 class="text-center mb-4">Join Our Team</h2>
+        <p
+          class="text-center mb-5"
+          style="max-width: 700px; margin: 0 auto; color: #204c3b"
+        >
+          At Mungu Asifiwe Farms, we're always looking for passionate
+          individuals to help us grow and make a difference in our community.
+          Explore opportunities to join our mission in sustainable agriculture.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-4 border rounded shadow careers-card h-100">
+              <h4>Farm Supervisor</h4>
+              <p>
+                Oversee daily operations on the cocoa farm, coordinate workers,
+                and ensure sustainable practices.
+              </p>
+              <p><strong>Location:</strong> Kibaale District</p>
+              <a href="#contact" class="cta-button">Apply Now</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 border rounded shadow careers-card h-100">
+              <h4>Community Outreach Officer</h4>
+              <p>
+                Engage with local communities to train, sensitize, and promote
+                agricultural best practices.
+              </p>
+              <p><strong>Location:</strong> Kibaale District</p>
+              <a href="#contact" class="cta-button">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         class="container py-5 fade-in-up"
         data-aos="fade-up"
@@ -1165,6 +897,40 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Details Section -->
+      <section class="container py-5" id="contact-details" data-aos="fade-up">
+        <h2 class="text-center mb-4">Contact Information</h2>
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <div class="card h-100 p-4 border-0 shadow-sm">
+              <h5 class="mb-2">📍 Our Office</h5>
+              <p class="text-muted">
+                Kyakadongo Cell,<br />Kabasekende Sub County,<br />Kibaale
+                District, Uganda
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 border-0 shadow-sm">
+              <h5 class="mb-2">📧 Email Us</h5>
+              <p class="text-muted mb-1">info@munguasifiwe.com</p>
+              <h6 class="mt-3 mb-2">📞 Call Us</h6>
+              <p class="text-muted mb-1">+256 782 859503</p>
+              <p class="text-muted mb-1">+256 779 778007</p>
+              <p class="text-muted">+256 774 723155</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 border-0 shadow-sm">
+              <h5 class="mb-2">🕒 24/7 Support</h5>
+              <p class="text-muted">
+                Our management is always available to answer any questions and
+                address any concerns from within and outside the farm.
+              </p>
+            </div>
           </div>
         </div>
       </section>
