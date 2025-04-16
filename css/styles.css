@@ -36,6 +36,7 @@ h1, h2, h3 {
 }
 
 .navbar-brand {
+  
   display: flex;
   align-items: center;
   font-size: 1.4rem;
@@ -75,8 +76,17 @@ h1, h2, h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
+/* .navbar-toggler {
+  border-color: #116e36;
+} */
+
 .navbar-toggler {
   border-color: #116e36;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
+  margin-left: auto;
+  align-self: center;
 }
 
 .navbar-toggler-icon {
